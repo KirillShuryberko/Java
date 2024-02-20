@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
+    public static void main(String[] args) {
+        var scanner = new Scanner(System.in);
+        System.out.println("What is the speed of the car?");
+        var Speed = scanner.nextDouble();
+
+        while (true) {
+            System.out.println("how many hours are you on the road?");
+            var Hours = scanner.nextDouble();
+
+            if (Hours == 0)
+                break;
+
+
+            var result = Speed / Hours;
+            System.out.println("result = " + result);
+        }
+    }
+}
